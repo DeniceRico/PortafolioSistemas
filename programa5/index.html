@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productor-Consumidor</title>
+    <style>
+         .container {
+            display: flex;
+            width: 880px; 
+            margin: 20px auto;
+            color: rgb(255, 112, 174);
+        }
+        .cell-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2px;
+        }
+        .letter {
+            font-size: 16px;
+            font-weight: bold;
+            height: 20px; 
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            margin-top: 5px;
+            border: 2px solid rgb(255, 112, 174);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .status {
+            margin: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(255, 112, 174);
+        }
+        .final-message{
+            color:red;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <h1 style="font-size: x-large;">Gomez Rubio Alexia, Rico Morones Denice Estefania</h1>
+    <br />
+    <div class="container" id="buffer">
+       
+    </div>
+    <div class="status">
+        <p id="producerStatus">Estado del Productor: Dormido</p>
+        <p id="consumerStatus">Estado del Consumidor: Dormido</p>
+    </div>
+
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

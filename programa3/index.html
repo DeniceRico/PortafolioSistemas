@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <title></title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <br /><br />
+
+    <div>
+        <span>Ingresa el numero de procesos</span>
+        <input type="number" id="numElm" min="1" required />
+        <br /><br />
+        <button onclick="Procesos()">Generar procesos aleatorios</button>
+      </div>
+  
+      
+  
+      <div id="datos">
+        <p><span>Nuevos:</span>
+        <ul id="procesosPendientes"></ul>
+        <span id="lotesPendientes">0</span></p>
+        <p><span>Listos:</span></p>
+        <ul id="loteEnEjecucion"></ul>
+        <p><span>Ejecucion:</span></p>
+        <ul id="procesoEnEjecucion"></ul>
+        <p><span>Bloqueados:</span></p>
+        <ul id="procesoBloqueado"></ul>
+        <p><span>Terminados:</span></p>
+        <ul id="procesosTerminados"></ul>
+        <p><span>Contador Global:</span> <span id="contadorGlobal">0</span> segundos</p>
+  
+        <button onclick="Iniciar()">Iniciar</button>
+      </div>
+
+</body>
+</html>

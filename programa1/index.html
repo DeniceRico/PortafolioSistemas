@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Procesamiento por Lotes</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <br />
+
+    <h1 style="font-size: x-large;">Gomez Rubio Alexia, Rico Morones Denice Estefania</h1>
+
+    <div>
+      <span>Ingresa el numero de procesos</span>
+      <input type="number" id="numElm" min="1" required />
+      <br /><br />
+      <button onclick="Procesos()">Ingresar datos</button>
+    </div>
+
+    <div id="formularioProcesos" style="display: none">
+      <h2>Captura de Procesos</h2>
+      <form id="procesosForm">
+
+      </form>
+      <button id="btnAgregarProcesos" onclick="validarCampos()">Agregar Procesos</button>
+
+    </div>
+
+  <div id="datos">
+    <p><span>Número de Lotes Pendientes:</span> <span id="lotesPendientes">0</span></p>
+    <p><span>Lote en Ejecución:</span></p>
+    <ul id="loteEnEjecucion"></ul>
+    <p><span>Proceso en Ejecución:</span></p>
+    <ul id="procesoEnEjecucion"></ul>
+    <p><span>Procesos Terminados:</span></p>
+    <ul id="procesosTerminados"></ul>
+    <p><span>Contador Global:</span> <span id="contadorGlobal">0</span> segundos</p>
+
+    <button onclick="Iniciar()">Iniciar</button>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title></title>
+    <style>
+      #tablaProcesosTerminados {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <br /><br />
+    <h1 style="font-size: x-large;">Gomez Rubio Alexia, Rico Morones Denice Estefania</h1>
+
+    <div>
+      <span>Ingresa el número de procesos</span>
+      <input type="number" id="numElm" min="1" required />
+      <br /><br />
+      <button onclick="Procesos()">Generar procesos aleatorios</button>
+    </div>
+
+    <div id="datos">
+      <p><span>Nuevos:</span></p>
+      <ul id="procesosPendientes"></ul>
+      <span id="lotesPendientes">0</span>
+
+      <p><span>Listos:</span></p>
+      <ul id="loteEnEjecucion"></ul>
+
+      <p><span>Ejecución:</span></p>
+      <ul id="procesoEnEjecucion"></ul>
+
+      <p><span>Bloqueados:</span></p>
+      <ul id="procesoBloqueado"></ul>
+
+      <p><span>Terminados:</span></p>
+      <ul id="procesosTerminados"></ul>
+
+      <p>
+        <span>Contador Global:</span>
+        <span id="contadorGlobal">0</span> segundos
+      </p>
+
+      <button onclick="Iniciar()">Iniciar</button>
+
+      <p><span>Procesos Terminados (BCP):</span></p>
+
+      <div
+        id="tablaProcesosTerminados"
+        class="tablaProcesosTerminados"
+        style="display: none"
+      >
+        <table class="tabla" border="1">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Operación</th>
+              <th>Resultado</th>
+              <th>Tiempo de Llegada</th>
+              <th>Tiempo de Respuesta</th>
+              <th>Tiempo de Finalización</th>
+              <th>Tiempo de Espera</th>
+              <th>Tiempo de Servicio</th>
+              <th>Tiempo de Retorno</th>
+              <th>Tiempo de Restante</th>
+            </tr>
+          </thead>
+          <tbody id="procesosTerminadosTable"></tbody>
+        </table>
+      </div>
+
+      <div id="tablaListos" style="display: none">
+        <table class="tablaListos" border="1">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Operación</th>
+              <th>Resultado</th>
+              <th>Tiempo de Llegada</th>
+              <th>Tiempo de Respuesta</th>
+              <th>Tiempo de Finalización</th>
+              <th>Tiempo de Espera</th>
+              <th>Tiempo de Servicio</th>
+              <th>Tiempo de Retorno</th>
+              <th>Tiempo de Restante</th>
+            </tr>
+          </thead>
+          <tbody id="listosTableBody"></tbody>
+        </table>
+      </div>
+
+      <div id="tablaCola" style="display: none">
+        <table class="tablaCola" border="1">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Operación</th>
+              <th>Resultado</th>
+              <th>Tiempo de Llegada</th>
+              <th>Tiempo de Respuesta</th>
+              <th>Tiempo de Finalización</th>
+              <th>Tiempo de Espera</th>
+              <th>Tiempo de Servicio</th>
+              <th>Tiempo de Retorno</th>
+              <th>Tiempo de Restante</th>
+            </tr>
+          </thead>
+          <tbody id="colaTableBody"></tbody>
+        </table>
+      </div>
+
+      
+    </div>
+  </body>
+</html>
